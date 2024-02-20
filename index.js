@@ -8,7 +8,7 @@
     // Returns latest google news
     // console.log(await require('./apis/googleNews')());
 
-    // Returns latest spotify trendings
+    // Returns latest spotify trendings (200 songs)
     // console.log(await require('./apis/spotifyTrends')());
 
     // Cryptocurrency Prices Live (50 coins)
