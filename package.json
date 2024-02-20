@@ -1,7 +1,7 @@
 {
   "name": "public-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "It returns a random quote from a list of quotes.\r ```js\r [\r     {\r       quote: 'Is that a gun in your pocket, or are you just glad to see me?',\r       author: 'Mae West, 1893-1980, American actress'\r     }\r ]\r ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

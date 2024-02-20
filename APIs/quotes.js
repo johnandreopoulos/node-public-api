@@ -1,7 +1,7 @@
 const { fetch } = require('undici');
 const cheerio = require('cheerio');
 
-const url = 'https://news.google.com/home?hl=en-US&gl=US&ceid=US:en';
+const url = 'https://best-quotations.com/tyxaio.php';
 
 async function scrapeQuotes() {
     const response = await fetch(url).then(res => res.text());
@@ -14,7 +14,7 @@ async function scrapeQuotes() {
         quotes.push({ quote, author });
     });
     
-    return quotes;
+    return quotes[Math.floor(Math.random() * quotes.length)]
 }
 
 module.exports = scrapeQuotes;

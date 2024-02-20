@@ -5,9 +5,6 @@ It returns a random quote from a list of quotes.
     {
       quote: 'Is that a gun in your pocket, or are you just glad to see me?',
       author: 'Mae West, 1893-1980, American actress'
-    } {
-      quote: '“When Will Jesus Bring the Pork Chops?” This title offends all three  major religions, and even vegetarians!',
-      author: 'George Carlin, 1936-2008, American comedian'
     }
 ]
 ```
