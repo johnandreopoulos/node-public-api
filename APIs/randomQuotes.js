@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 
 const url = 'https://best-quotations.com/tyxaio.php';
 
-async function randomQuotes() {
+async function index() {
     const response = await fetch(url).then(res => res.text());
     const $ = cheerio.load(response);
     const quotes = [];
@@ -17,4 +17,4 @@ async function randomQuotes() {
     return quotes[Math.floor(Math.random() * quotes.length)]
 }
 
-module.exports = randomQuotes;
+module.exports = index;

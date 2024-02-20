@@ -5,6 +5,7 @@ This is a list of available APIs that can be used to get data from the web.
   - [Random Quote Generator](#random-quote-generator)
   - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
+  - [Live Cryptocurrency Prices (50 Top Coins)](#live-cryptocurrency-prices-50-top-coins)
 
 
 ## Random Quote Generator
@@ -30,7 +31,7 @@ It returns a list of news articles based on google news.
       time: '1 hour ago',
       author: '',
       link: 'https://news.google.com/./articles/    CBMiMWh0dHBzOi8vd3d3LmJiYy5jb20vbmV3cy93b3JsZC11cy1jYW5hZGEtNjgzNDYwMjfSATVodH  RwczovL3d3dy5iYmMuY29tL25ld3Mvd29ybGQtdXMtY2FuYWRhLTY4MzQ2MDI3LmFtcA?hl=en-US&    gl=US&ceid=US%3Aen'
-    } {
+    }, {
       title: 'Gaza cease-fire, Minnesota shooting, Colorado shooting, Julian    Assange, California rain, Biden: Daily Briefing',
       source: 'USA TODAY',
       time: '55 minutes ago',
@@ -53,8 +54,7 @@ It returns a list of 200 songs trending on Spotify.
     sevenDay: '38,108,850',
     sevenDayPlus: '+573,214',
     totalStreams: '129,370,578'
-  },
-  {
+  }, {
     artist: 'Taylor Swift',
     track: 'Cruel Summer',
     streams: '4,520,317',
@@ -62,6 +62,31 @@ It returns a list of 200 songs trending on Spotify.
     sevenDay: '32,322,647',
     sevenDayPlus: '+249,426',
     totalStreams: '1,313,238,641'
+  }, { MORE HERE }
+]
+```
+
+## Live Cryptocurrency Prices (50 Top Coins)
+It returns a list of 50 top cryptocurrencies and their prices.
+- Address URL Used: https://www.livecoinwatch.com/
+```js
+[
+  {
+    sort: '1',
+    name: 'BTC Bitcoin',
+    price: '$52338.87',
+    marketCap: '$1.0276 T',
+    volume: '$19.65 B',
+    liquidity: '$19.65 B',
+    allTimeHigh: '$68780.77'
+  }, {
+    sort: '2',
+    name: 'ETH Ethereum',
+    price: '$2970.47',
+    marketCap: '$351.53 B',
+    volume: '$18.57 B',
+    liquidity: '$18.57 B',
+    allTimeHigh: '$4861.29'
   }, { MORE HERE }
 ]
 ```
