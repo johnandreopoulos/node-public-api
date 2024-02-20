@@ -2,9 +2,9 @@ const app = require('express').Router();
 const { fetch } = require('undici');
 const cheerio = require('cheerio');
 
-const url = 'https://news.google.com/home?hl=en-US&gl=US&ceid=US:en';
+const url = 'https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen';
 
-app.get('/googlenews', async (req, res) => {
+app.get('/googlewordnews', async (req, res) => {
     try {
         const response = await fetch(url).then(res => res.text());
         const $ = cheerio.load(response);
