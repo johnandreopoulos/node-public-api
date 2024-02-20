@@ -34,7 +34,10 @@ It returns a random quote from a list of quotes.
     {
       quote: 'Is that a gun in your pocket, or are you just glad to see me?',
       author: 'Mae West, 1893-1980, American actress'
-    }
+    }, {
+      quote: 'Coming back to where you started is not the same as never leaving.',
+      author: 'Terry Pratchett, 1948-2015, British writer'
+    }, { MORE HERE }
 ]
 ```
 
