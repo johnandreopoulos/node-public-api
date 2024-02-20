@@ -3,7 +3,7 @@ This is a list of available APIs that can be used to get data from the web.
 
 - [Available APIs](#available-apis)
   - [Random Quote Generator](#random-quote-generator)
-  - [Google News](#google-news)
+  - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
 
 
@@ -19,7 +19,7 @@ It returns a random quote from a list of quotes.
 ]
 ```
 
-## Google News
+## Latest World News based on Google News
 It returns a list of news articles based on google news.
 - Address URL Used: https://news.google.com/home?hl=en-US&gl=US&ceid=US:en
 ```js
