@@ -2,8 +2,7 @@
 This is a list of available APIs that can be used to get data from the web.
 
 - [Available APIs](#available-apis)
-- [Required Libraries](#required-libraries)
-    - [Install (Node.js)](#install-nodejs)
+- [Requirements](#requirements)
   - [Random Quote Generator](#random-quote-generator)
   - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
@@ -11,17 +10,16 @@ This is a list of available APIs that can be used to get data from the web.
   
 The following APIs are available for use. Each API returns a list of objects with the data requested. The data is returned in JSON format.
 
-# Required Libraries
-- [Node.js](https://nodejs.org/en/)
+# Requirements
+- Install Node.js [Node.js](https://nodejs.org/en/download/)
   
-The following libraries are required to use the APIs:
+The following packages are used to get the data from the web:
 - [undici](https://www.npmjs.com/package/undici)
 - [cheerio](https://www.npmjs.com/package/cheerio)
 
-### Install (Node.js)
-```bash
-npm install
-```
+Windows installation `npm install`
+
+Linux installation `sudo npm install`
 
 ---
 
