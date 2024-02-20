@@ -1,6 +1,6 @@
 ## Random Quote Generator
 It returns a random quote from a list of quotes.
-```json
+```js
 [
     {
       quote: 'Is that a gun in your pocket, or are you just glad to see me?',
@@ -14,7 +14,7 @@ It returns a random quote from a list of quotes.
 
 ## News
 It returns a list of news articles based on google news.
-```json
+```js
 [
     {
       title: 'Israel-Gaza war: US calls for temporary ceasefire in UN text',
