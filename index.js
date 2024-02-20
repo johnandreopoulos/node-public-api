@@ -1,7 +1,13 @@
-(async () => {
-    const quote = await require('./APIs/quotes')();
-    console.log(quote);
+// Description: Main file to run the project.
+// Used to test the apis.
 
-    const news = await require('./APIs/news')();
-    console.log(news);
+(async () => {
+    // // Returns a random quote
+    // console.log(await require('./apis/randomQuotes')());
+
+    // // Returns latest google news
+    // console.log(await require('./apis/googleNews')());
+
+    // Returns latest spotify trendings
+    // console.log(await require('./apis/spotifyTrends')());
 })();

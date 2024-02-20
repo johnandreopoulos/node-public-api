@@ -1,6 +1,6 @@
 ## Random Quote Generator
 It returns a random quote from a list of quotes.
-- URL: https://best-quotations.com/tyxaio.php
+- Address URL Used: https://best-quotations.com/tyxaio.php
 ```js
 [
     {
@@ -12,7 +12,7 @@ It returns a random quote from a list of quotes.
 
 ## News
 It returns a list of news articles based on google news.
-- URL: https://news.google.com/home?hl=en-US&gl=US&ceid=US:en
+- Address URL Used: https://news.google.com/home?hl=en-US&gl=US&ceid=US:en
 ```js
 [
     {
@@ -28,5 +28,31 @@ It returns a list of news articles based on google news.
       author: 'Nicole FallertBy Nicole Fallert',
       link: 'https://news.google.com/./articles/    CBMic2h0dHBzOi8vd3d3LnVzYXRvZGF5LmNvbS9zdG9yeS9uZXdzLzIwMjQvMDIvMjAvaXNyYWVsLW  hhbWFzLWNlYXNlLWZpcmUtc2hvb3RpbmctZ3VuLWNhbGlmb3JuaWEtd2VhdGhlci83MjY2Nzg5MTAw    Ny_SAQA?hl=en-US&gl=US&ceid=US%3Aen'
     }, { MORE HERE }
+]
+```
+
+## Spotify Daily Trendings (200 Songs)
+It returns a list of 200 songs trending on Spotify.
+- Address URL Used: https://kworb.net/spotify/country/global_daily.html 
+```js
+[
+  {
+    artist: 'Benson Boone',
+    track: 'Beautiful Things',
+    streams: '5,056,620',
+    streamsPlus: '-375,698',
+    sevenDay: '38,108,850',
+    sevenDayPlus: '+573,214',
+    totalStreams: '129,370,578'
+  },
+  {
+    artist: 'Taylor Swift',
+    track: 'Cruel Summer',
+    streams: '4,520,317',
+    streamsPlus: '-421,229',
+    sevenDay: '32,322,647',
+    sevenDayPlus: '+249,426',
+    totalStreams: '1,313,238,641'
+  }, { MORE HERE }
 ]
 ```
