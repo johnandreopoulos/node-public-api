@@ -6,7 +6,10 @@ This is a list of available APIs that can be used to get data from the web.
   - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
   - [Live Cryptocurrency Prices (50 Top Coins)](#live-cryptocurrency-prices-50-top-coins)
+  
+The following APIs are available for use. Each API returns a list of objects with the data requested. The data is returned in JSON format.
 
+---
 
 ## Random Quote Generator
 It returns a random quote from a list of quotes.
