@@ -1,3 +1,12 @@
+# Available APIs
+This is a list of available APIs that can be used to get data from the web.
+
+- [Available APIs](#available-apis)
+  - [Random Quote Generator](#random-quote-generator)
+  - [News](#news)
+  - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
+
+
 ## Random Quote Generator
 It returns a random quote from a list of quotes.
 - Address URL Used: https://best-quotations.com/tyxaio.php
