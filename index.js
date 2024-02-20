@@ -1,16 +1,26 @@
-// Description: Main file to run the project.
-// Used to test the apis.
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
-(async () => {
-    // Returns a random quote
-    // console.log(await require('./apis/randomQuotes')());
+const app = express();
+const port = 3000;
 
-    // Returns latest google news
-    // console.log(await require('./apis/googleNews')());
+// Dynamically load all API routes from the ./apis folder
+const apiRoutesPath = path.join(__dirname, 'apis');
+const apiRoutes = fs.readdirSync(apiRoutesPath).filter(file => file.endsWith('.js'));
 
-    // Returns latest spotify trendings (200 songs)
-    // console.log(await require('./apis/spotifyTrends')());
+apiRoutes.forEach(routeFile => {
+    const routePath = `./apis/${routeFile}`;
+    const route = require(routePath);
+    app.use('/api', route);
+});
 
-    // Cryptocurrency Prices Live (50 coins)
-    // console.log(await require('./apis/liveCoins')());
-})();
+// Display a list of all available API paths in JSON format
+app.get('/', (req, res) => {
+    const apiPaths = apiRoutes.map(routeFile => `/api/${routeFile.replace('.js', '')}`);
+    res.json({ availableApiPaths: apiPaths });
+});
+
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});

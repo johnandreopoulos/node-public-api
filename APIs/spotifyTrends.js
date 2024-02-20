@@ -1,13 +1,15 @@
+const app = require('express').Router();
 const { fetch } = require('undici');
 const cheerio = require('cheerio');
 
 const url = 'https://kworb.net/spotify/country/global_daily.html';
 
-async function index() {
+app.get('/spotifytrends', async (req, res) => {
   const response = await fetch(url).then(res => res.text());
   const $ = cheerio.load(response);
 
   const trends = [];
+  let count = 1;
   $('tr').each((i, el) => {
     const artist = $(el).find('td.text.mp div a').eq(0).text();
     const track = $(el).find('td.text.mp div a').eq(1).text();
@@ -18,10 +20,10 @@ async function index() {
     const totalStreams = $(el).find('td').eq(10).text();
 
     if (!artist) return;
-    trends.push({ artist, track, streams, streamsPlus, sevenDay, sevenDayPlus, totalStreams });
+    trends.push({ position: count++, artist, track, streams, streamsPlus, sevenDay, sevenDayPlus, totalStreams });
   });
 
-  return trends;
-}
+  res.json(trends);
+});
 
-module.exports = index;
+module.exports = app;

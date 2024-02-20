@@ -1,9 +1,10 @@
+const app = require('express').Router();
 const { fetch } = require('undici');
 const cheerio = require('cheerio');
 
 const url = 'https://www.livecoinwatch.com/';
 
-async function index() {
+app.get('/livecoins', async (req, res) => {
     const response = await fetch(url).then(res => res.text());
     const $ = cheerio.load(response);
     const coins = [];
@@ -16,12 +17,12 @@ async function index() {
         const volume = $(el).find('.price').eq(1).text().trim();
         const liquidity = $(el).find('.filter-item.table-item').eq(4).text().trim();
         const allTimeHigh = $(el).find('.ath-col').text().trim();
-        
+
         if (!name || !price) return;
         coins.push({ sort, name, price, marketCap, volume, liquidity, allTimeHigh });
     });
 
-    return coins;
-}
+    res.json(coins);
+});
 
-module.exports = index;
+module.exports = app;

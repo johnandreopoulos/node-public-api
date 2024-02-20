@@ -1,9 +1,10 @@
+const app = require('express').Router();
 const { fetch } = require('undici');
 const cheerio = require('cheerio');
 
 const url = 'https://best-quotations.com/tyxaio.php';
 
-async function index() {
+app.get('/randomquotes', async (req, res) => {
     const response = await fetch(url).then(res => res.text());
     const $ = cheerio.load(response);
     const quotes = [];
@@ -13,8 +14,8 @@ async function index() {
         const author = $(el).find('.author').text();
         quotes.push({ quote, author });
     });
-    
-    return quotes[Math.floor(Math.random() * quotes.length)]
-}
 
-module.exports = index;
+    res.json(quotes);
+});
+
+module.exports = app;
