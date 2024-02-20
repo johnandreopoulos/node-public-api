@@ -27,6 +27,7 @@ It returns a list of news articles based on google news.
       time: '55 minutes ago',
       author: 'Nicole FallertBy Nicole Fallert',
       link: 'https://news.google.com/./articles/    CBMic2h0dHBzOi8vd3d3LnVzYXRvZGF5LmNvbS9zdG9yeS9uZXdzLzIwMjQvMDIvMjAvaXNyYWVsLW  hhbWFzLWNlYXNlLWZpcmUtc2hvb3RpbmctZ3VuLWNhbGlmb3JuaWEtd2VhdGhlci83MjY2Nzg5MTAw    Ny_SAQA?hl=en-US&gl=US&ceid=US%3Aen'
-    }
+    },
+    ...
 ]
 ```

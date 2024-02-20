@@ -3,5 +3,5 @@
     console.log(quote);
 
     const news = await require('./APIs/news')();
-    console.log(news[0], news[1]);
+    console.log(news);
 })();
