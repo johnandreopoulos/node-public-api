@@ -8,6 +8,7 @@ This is a list of available APIs that can be used to get data from the web.
   - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
   - [Live Cryptocurrency Prices (50 Top Coins)](#live-cryptocurrency-prices-50-top-coins)
+  - [Top 10 Netflix Movies](#top-10-netflix-movies)
  
 ![image](https://github.com/johnandreopoulos/Public-APIs/assets/39243722/a8377707-affa-44fe-8d69-0da12c02c850)
 
@@ -111,6 +112,29 @@ It returns a list of 50 top cryptocurrencies and their prices.
     volume: '$18.57 B',
     liquidity: '$18.57 B',
     allTimeHigh: '$4861.29'
+  }, { MORE HERE }
+]
+```
+
+## Top 10 Netflix Movies
+It returns a list of the top 10 movies on Netflix.
+- Address URL Used: https://www.netflix.com/tudum/top10/
+```js
+[
+  {
+    "rank": "1",
+    "name": "Despicable Me 3",
+    "weeksInTop10": "1",
+    "hoursPlayed": "23,900,000",
+    "runtime": "1:30",
+    "views": "15,900,000"
+  }, {
+    "rank": "2",
+    "name": "Orion and the Dark",
+    "weeksInTop10": "2",
+    "hoursPlayed": "19,700,000",
+    "runtime": "1:33",
+    "views": "12,700,000"
   }, { MORE HERE }
 ]
 ```
