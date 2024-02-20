@@ -3,7 +3,7 @@ This is a list of available APIs that can be used to get data from the web.
 
 - [Available APIs](#available-apis)
 - [Requirements](#requirements)
-  - [Random Quote Generator](#random-quote-generator)
+  - [Quotes](#quotes)
   - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
   - [Live Cryptocurrency Prices (50 Top Coins)](#live-cryptocurrency-prices-50-top-coins)
@@ -19,6 +19,7 @@ The following APIs are available for use. Each API returns a list of objects wit
 The following packages are used to get the data from the web:
 - [undici](https://www.npmjs.com/package/undici)
 - [cheerio](https://www.npmjs.com/package/cheerio)
+- [express](https://www.npmjs.com/package/express)
 
 Windows installation `npm install`
 
@@ -26,7 +27,7 @@ Linux installation `sudo npm install`
 
 ---
 
-## Random Quote Generator
+## Quotes
 It returns a random quote from a list of quotes.
 - Address URL Used: https://best-quotations.com/tyxaio.php
 ```js
