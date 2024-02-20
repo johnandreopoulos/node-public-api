@@ -3,6 +3,7 @@ This is a list of available APIs that can be used to get data from the web.
 
 - [Available APIs](#available-apis)
 - [Requirements](#requirements)
+- [Example of returned data](#example-of-returned-data)
   - [Quotes](#quotes)
   - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
@@ -27,6 +28,7 @@ Linux installation `sudo npm install`
 
 ---
 
+# Example of returned data
 ## Quotes
 It returns a random quote from a list of quotes.
 - Address URL Used: https://best-quotations.com/tyxaio.php
