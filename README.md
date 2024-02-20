@@ -7,6 +7,9 @@ This is a list of available APIs that can be used to get data from the web.
   - [Latest World News based on Google News](#latest-world-news-based-on-google-news)
   - [Spotify Daily Trendings (200 Songs)](#spotify-daily-trendings-200-songs)
   - [Live Cryptocurrency Prices (50 Top Coins)](#live-cryptocurrency-prices-50-top-coins)
+ 
+![image](https://github.com/johnandreopoulos/Public-APIs/assets/39243722/a8377707-affa-44fe-8d69-0da12c02c850)
+
   
 The following APIs are available for use. Each API returns a list of objects with the data requested. The data is returned in JSON format.
 
