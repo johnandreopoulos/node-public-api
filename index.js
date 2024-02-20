@@ -30,4 +30,8 @@ const server = app.listen(port, () => {
     const actualPort = server.address().port;
     port = actualPort;
     console.log(`Server is running at http://localhost:${actualPort}`);
+
+    // Automatically open the default browser to the server's URL
+    // const { exec } = require('child_process');
+    // exec(`start http://localhost:${actualPort}`);
 });
