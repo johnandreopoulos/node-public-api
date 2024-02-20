@@ -1,5 +1,6 @@
 ## Random Quote Generator
 It returns a random quote from a list of quotes.
+- URL: https://best-quotations.com/tyxaio.php
 ```js
 [
     {
@@ -11,6 +12,7 @@ It returns a random quote from a list of quotes.
 
 ## News
 It returns a list of news articles based on google news.
+- URL: https://news.google.com/home?hl=en-US&gl=US&ceid=US:en
 ```js
 [
     {
