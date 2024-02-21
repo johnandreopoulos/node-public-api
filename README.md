@@ -1,7 +1,6 @@
 # Available APIs (Scrapper)
 This is a list of available APIs that can be used to get data from the web.
 
-- [Available APIs](#available-apis)
 - [Requirements](#requirements)
 - [Example of returned data](#example-of-returned-data)
   - [Random Quotes](#random-quotes)
