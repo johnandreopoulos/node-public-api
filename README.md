@@ -1,4 +1,4 @@
-# Available APIs
+# Available APIs (Scrapper)
 This is a list of available APIs that can be used to get data from the web.
 
 - [Available APIs](#available-apis)
