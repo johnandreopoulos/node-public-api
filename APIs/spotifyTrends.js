@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 
 const url = 'https://kworb.net/spotify/country/global_daily.html';
 
-app.get('/spotifytrends', async (req, res) => {
+app.get('/spotifyTrends', async (req, res) => {
   try {
     const response = await fetch(url).then(res => res.text());
     const $ = cheerio.load(response);

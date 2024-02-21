@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 
 const url = 'https://best-quotations.com/tyxaio.php';
 
-app.get('/randomquotes', async (req, res) => {
+app.get('/randomQuotes', async (req, res) => {
     try {
         const response = await fetch(url).then(res => res.text());
         const $ = cheerio.load(response);
