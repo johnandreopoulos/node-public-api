@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 
 const url = 'https://www.livecoinwatch.com/';
 
-app.get('/livecoins', async (req, res) => {
+app.get('/liveCryptoCurrency', async (req, res) => {
     try {
         const response = await fetch(url).then(res => res.text());
         const $ = cheerio.load(response);
