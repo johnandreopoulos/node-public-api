@@ -9,7 +9,7 @@ This is a list of available APIs that can be used to get data from the web.
   - [Live Cryptocurrency Prices (50 Top Coins)](#live-cryptocurrency-prices-50-top-coins)
   - [Top 10 Netflix Movies](#top-10-netflix-movies)
  
-![image](https://github.com/johnandreopoulos/Public-APIs/assets/39243722/bec8fd93-d454-4105-95fd-51acca6a1b4f)
+![image](https://github.com/johnandreopoulos/Public-APIs/assets/39243722/5eb7180d-f9e1-41e5-833d-c999b81325fa)
   
 The following APIs are available for use. Each API returns a list of objects with the data requested. The data is returned in JSON format.
 
